@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .stroke { fill: none; stroke: rgba(10,10,10,0.18); stroke-width: 2; }
+      .accent { stroke: #6B0F1A; stroke-width: 6; }
+      .text { fill: rgba(10,10,10,0.7); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; font-size: 26px; letter-spacing: 0.22em; }
+      .small { fill: rgba(10,10,10,0.5); font-size: 16px; letter-spacing: 0.28em; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1400" height="1000" rx="32" />
+  <rect class="stroke" x="24" y="24" width="1352" height="952" rx="28" />
+  <line class="accent" x1="92" y1="110" x2="492" y2="110" />
+  <text class="text" x="92" y="206">ГАЛЕРЕЯ</text>
+  <text class="small" x="92" y="252">placeholder</text>
+  <rect class="stroke" x="92" y="320" width="1216" height="560" rx="24" />
+  <path class="stroke" d="M92 802 L360 610 L560 720 L780 520 L1000 680 L1308 460" />
+</svg>
+

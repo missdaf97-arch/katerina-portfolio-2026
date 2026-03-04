@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --fg: #0a0a0a;
+  --muted: #5a5a5a;
+  --line: rgba(10, 10, 10, 0.12);
+  --accent: #6b0f1a;
+  --footer: #0a0a0a;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-footer: var(--footer);
+
+  --font-body: var(--font-manrope);
+  --font-heading: var(--font-playfair);
+  --font-sans: var(--font-manrope);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body), ui-sans-serif, system-ui, -apple-system,
+      Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    text-rendering: geometricPrecision;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading), ui-serif, Georgia, Cambria,
+      "Times New Roman", Times, serif;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  .font-druk {
+    font-family: "Druk Wide", "Druk", var(--font-heading), system-ui,
+      -apple-system, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.08em;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html,
+  body {
+    cursor: none;
+  }
+  a,
+  button {
+    cursor: none;
+  }
+}
