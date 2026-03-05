@@ -65,22 +65,24 @@ export default function Home() {
                     <span className="mr-4 h-px flex-1 bg-[color:var(--line)]" />
                   </span>
                   <span className="mt-3 block w-full overflow-hidden rounded-2xl border border-black/10 bg-white">
-                    <span className="relative block aspect-[1988/1119]">
+                    <span className="relative block max-w-[1988px]">
                       <Image
                         src="/katerina1.jpg"
                         alt="Фото Катерины"
-                        fill
-                        sizes="(min-width: 1024px) 900px, 92vw"
-                        className="object-cover object-[50%_30%] contrast-110"
+                        width={1988}
+                        height={1119}
+                        quality={60}
+                        sizes="(min-width: 1200px) 1200px, (min-width: 768px) 90vw, 100vw"
+                        className="h-auto w-full object-cover object-[50%_30%] contrast-110"
                         priority
                       />
                       <span
                         aria-hidden="true"
-                        className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-black/0"
+                        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-black/0"
                       />
                       <span
                         aria-hidden="true"
-                        className="absolute left-0 top-0 h-[3px] w-28 bg-[color:var(--accent)]"
+                        className="pointer-events-none absolute left-0 top-0 h-[3px] w-28 bg-[color:var(--accent)]"
                       />
                     </span>
                   </span>
@@ -190,12 +192,16 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className="mt-8 overflow-hidden rounded-xl border border-black/10 bg-white">
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative max-w-[900px]">
                     <Image
                       src="/katerina2.png"
                       alt="Катерина"
-                      fill
-                      className="object-cover"
+                      width={900}
+                      height={675}
+                      quality={60}
+                      sizes="(min-width: 1024px) 900px, 100vw"
+                      className="h-auto w-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -277,12 +283,16 @@ export default function Home() {
                     key={item.src}
                     className="overflow-hidden rounded-2xl border border-black/10 bg-white"
                   >
-                    <div className="relative aspect-[4/3]">
+                    <div className="relative max-w-[800px]">
                       <Image
                         src={item.src}
                         alt={item.alt}
-                        fill
-                        className="object-cover"
+                        width={800}
+                        height={600}
+                        quality={60}
+                        sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
+                        className="h-auto w-full object-cover"
+                        loading="lazy"
                       />
                     </div>
                   </div>

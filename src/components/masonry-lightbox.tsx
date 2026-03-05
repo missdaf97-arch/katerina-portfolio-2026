@@ -43,12 +43,18 @@ export function MasonryLightbox({ items }: { items: GalleryItem[] }) {
             onClick={() => setOpenIndex(idx)}
             className="mb-5 block w-full break-inside-avoid rounded-2xl border border-black/10 bg-white p-2 hover:border-black/20 transition-colors"
           >
-            <img
-              src={item.src}
-              alt={item.alt}
-              loading="lazy"
-              className="w-full h-auto rounded-xl bg-white object-contain"
-            />
+            <div className="relative mx-auto max-w-[600px]">
+              <Image
+                src={item.src}
+                alt={item.alt}
+                width={600}
+                height={400}
+                quality={60}
+                sizes="(min-width: 1024px) 600px, (min-width: 640px) 50vw, 100vw"
+                className="h-auto w-full rounded-xl bg-white object-contain"
+                loading="lazy"
+              />
+            </div>
           </button>
         ))}
       </div>
@@ -74,12 +80,15 @@ export function MasonryLightbox({ items }: { items: GalleryItem[] }) {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="overflow-hidden rounded-3xl bg-[#0a0a0a] border border-white/10 shadow-[0_40px_120px_rgba(0,0,0,0.5)]">
-                <div className="relative aspect-[16/10]">
+                <div className="relative">
                   <Image
                     src={active.src}
                     alt={active.alt}
-                    fill
-                    className="object-contain"
+                    width={1600}
+                    height={1000}
+                    quality={60}
+                    sizes="100vw"
+                    className="h-auto w-full object-contain"
                   />
                 </div>
                 <div className="flex items-center justify-between gap-3 px-5 py-4 text-white/80">
