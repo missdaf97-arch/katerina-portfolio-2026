@@ -40,15 +40,15 @@ export default function Home() {
   ];
 
   const gallery = [
-    { src: "/gallery1.png", alt: "Галерея — 01", aspect: "portrait" as const },
-    { src: "/gallery2.png", alt: "Галерея — 02", aspect: "landscape" as const },
-    { src: "/gallery3.png", alt: "Галерея — 03", aspect: "square" as const },
-    { src: "/gallery4.png", alt: "Галерея — 04", aspect: "tall" as const },
-    { src: "/gallery5.png", alt: "Галерея — 05", aspect: "landscape" as const },
-    { src: "/gallery6.png", alt: "Галерея — 06", aspect: "portrait" as const },
-    { src: "/gallery7.png", alt: "Галерея — 07", aspect: "square" as const },
-    { src: "/gallery8.jpg", alt: "Галерея — 08", aspect: "landscape" as const },
-    { src: "/gallery9.jpg", alt: "Галерея — 09", aspect: "tall" as const },
+    { src: "/gallery1.webp", alt: "Галерея — 01", aspect: "portrait" as const },
+    { src: "/gallery2.webp", alt: "Галерея — 02", aspect: "landscape" as const },
+    { src: "/gallery3.webp", alt: "Галерея — 03", aspect: "square" as const },
+    { src: "/gallery4.webp", alt: "Галерея — 04", aspect: "tall" as const },
+    { src: "/gallery5.webp", alt: "Галерея — 05", aspect: "landscape" as const },
+    { src: "/gallery6.webp", alt: "Галерея — 06", aspect: "portrait" as const },
+    { src: "/gallery7.webp", alt: "Галерея — 07", aspect: "square" as const },
+    { src: "/gallery8.webp", alt: "Галерея — 08", aspect: "landscape" as const },
+    { src: "/gallery9.webp", alt: "Галерея — 09", aspect: "tall" as const },
   ];
 
   return (
@@ -67,7 +67,7 @@ export default function Home() {
                   <span className="mt-3 block w-full overflow-hidden rounded-2xl border border-black/10 bg-white">
                     <span className="relative block max-w-[1988px]">
                       <Image
-                        src="/katerina1.jpg"
+                        src="/katerina1.webp"
                         alt="Фото Катерины"
                         width={1988}
                         height={1119}
@@ -194,7 +194,7 @@ export default function Home() {
                 <div className="mt-8 overflow-hidden rounded-xl border border-black/10 bg-white">
                   <div className="relative max-w-[900px]">
                     <Image
-                      src="/katerina2.png"
+                      src="/katerina2.webp"
                       alt="Катерина"
                       width={900}
                       height={675}
@@ -274,10 +274,10 @@ export default function Home() {
 
               <div className="grid gap-5 sm:grid-cols-2">
                 {[
-                  { src: "/neuro1.jpg", alt: "Нейрофото 1" },
-                  { src: "/neuro2.jpg", alt: "Нейрофото 2" },
-                  { src: "/neuro3.jpg", alt: "Нейрофото 3" },
-                  { src: "/neuro4.jpg", alt: "Нейрофото 4" },
+                  { src: "/neuro1.webp", alt: "Нейрофото 1" },
+                  { src: "/neuro2.webp", alt: "Нейрофото 2" },
+                  { src: "/neuro3.webp", alt: "Нейрофото 3" },
+                  { src: "/neuro4.webp", alt: "Нейрофото 4" },
                 ].map((item) => (
                   <div
                     key={item.src}
